@@ -1,0 +1,11 @@
+form p.text_recaptcha{
+  font-size: 1.4rem;
+  margin-top: 2rem;
+
+  text-align: center;
+}
+
+form p.text_recaptcha a{
+  color: var(--red-skytl);
+  text-decoration: none;
+}

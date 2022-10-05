@@ -1,0 +1,32 @@
+
+.Interest_container {
+  margin-top: 4rem;
+  margin-bottom: 7rem;
+
+}
+
+
+.Interest_container h1{
+  font-weight: normal;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+
+
+#map {
+  height: 80rem;
+  width: 100%;
+  max-width: 73rem;
+  margin: 3rem auto ;
+  padding: 0;
+  z-index: 2;
+  /* display: block; */
+}
+
+button.showForm_button {
+  max-width: 73rem;
+  margin: 0 auto;
+  display: block;
+}

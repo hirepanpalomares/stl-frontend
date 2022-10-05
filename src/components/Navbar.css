@@ -1,0 +1,97 @@
+
+.NavBar_container {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;  
+    /* border: solid;  */
+}
+
+.droneIcon_Container button{
+    background: transparent;
+    border: none;
+}
+
+.droneIcon_Container svg{
+    width: 6rem;
+    height: 6rem;
+    fill: #000000;
+}
+
+.droneIcon_Container svg:hover{
+    fill: #c04141;
+    cursor: pointer;
+}
+
+
+
+.SkyTL_button_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SkyTL_button_container button{
+    background-color: transparent;
+    border-radius: 0rem;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.1rem;
+    
+    padding: 1rem 2rem;
+    font-size: 2.5rem;
+    font-family: 'Playfair Display';
+    margin: auto 0;
+}
+
+.navigationButtons_container{
+
+}
+
+.SkyTL_button_container button:hover{
+    background-color: var(--red-skytl);
+    border-radius: 0rem;
+    border-style: solid;
+    border-color: var(--red-skytl);
+    border-width: 0.1rem;
+
+    color: white;
+    
+    cursor: pointer;
+}
+
+
+.navigationButtons_container ul{
+    list-style: none;
+    text-align: center;
+
+}
+
+.navigationButtons_container li{
+    display: inline-block;
+    margin: 1rem;
+    padding: 1rem;
+    border: solid transparent 2px;
+
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.5rem;
+    word-spacing: normal;
+}
+
+
+.navigationButtons_container li a{
+    color: var(--black-skytl);
+    text-decoration: none;
+}
+
+
+.navigationButtons_container li:hover{
+    border-bottom: solid var(--red-skytl) 2px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .NavBar_container {
+        grid-template-columns: none;
+        grid-template-rows: 8rem 8rem;
+    }
+}

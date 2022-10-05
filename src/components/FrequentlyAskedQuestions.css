@@ -1,0 +1,46 @@
+
+.FrequentlyAskedQuestions_container {
+    font-family: "Open Sans", sans-serif;
+    /* letter-spacing: 0.04em; */
+    margin-top: 3rem;
+    width: 100%;
+    padding: 2rem;
+}
+
+
+.FrequentlyAskedQuestions_container h4 {
+    font-weight: normal;
+    color: var(--red-skytl);
+    font-size: 1.8rem;
+}
+
+.FAQ_header > .text {
+    color: var(--gray-skytl);
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+
+ul.Questions_list {
+    list-style: none;
+    padding: 0;
+    margin-top: 3rem;
+    
+    width: 100%;
+    max-width: 73rem;
+
+    margin: 3rem auto 0 auto;
+}
+
+.FrequentlyAskedQuestions_container ul li {
+
+    border-bottom: solid 1px;
+    border-color: var(--gray-light-skytl) ;
+
+    padding: 2rem 0;
+}
+
+.FAQ_header {
+    max-width: 100rem;
+    margin: 0 auto;
+}

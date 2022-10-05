@@ -1,0 +1,12 @@
+.Confirmation_email_container {
+  height: 70vh;
+  text-align: center;
+  
+  font-family: 'Playfair Display', serif;
+}
+
+.Confirmation_email_container h1 {
+  font-weight: normal;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  padding-top: 10rem;
+}

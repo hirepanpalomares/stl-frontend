@@ -1,0 +1,95 @@
+
+
+.ContactUs_container  {
+  font-family: "Open Sans", Arial, sans-serif;
+  text-align: center;
+
+  margin-bottom: 30rem;
+
+}
+
+.signup_form {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0 auto;
+  
+
+  max-width: 60rem;
+  margin-bottom: 30rem;
+
+}
+
+.signup_form input{
+  border: none;
+  border-bottom: solid var(--gray-light-skytl) 1px;
+
+  
+  width: auto;
+  height: 5.6rem;
+  
+  margin-bottom: 1.9rem;
+  padding: 1rem;
+  
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.7rem;
+  
+  background-color: transparent;
+}
+
+.signup_form textarea.input_box{
+  border: solid var(--gray-light-skytl) 1px;
+  height: 15rem;
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1.7rem;
+
+  padding: 1rem;
+  margin-bottom: 1.9rem;
+
+}
+
+h2.contact-us {
+  font-weight: normal;
+  color: var(--red-skytl);
+
+  margin: 2rem auto;
+  text-align: left;
+  max-width: 60rem;
+
+}
+
+.ContactUs_container h1 {
+  font-weight: normal;
+  color: var(--black-skytl);
+  font-size: 2.3rem;
+  margin-bottom: 3rem;
+}
+
+button.Skytl_button.signup_today {
+  max-width: 60rem;
+}
+
+button.cancel_form {
+  margin-top: 2rem;
+  background-color: transparent;
+  border: none;
+
+  color: var(--red-skytl);
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+
+.ContactUs_container .message_sent svg {
+  margin: 10rem auto 1rem auto;
+  display: block;
+  fill: rgb(137, 173, 211);
+}
+
+.ContactUs_container p.thanks-inquiry {
+  font-size: 1.8rem;
+  color: var(--red-skytl);
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}

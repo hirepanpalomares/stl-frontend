@@ -1,0 +1,59 @@
+.LandingPage_container {
+  display: grid;
+  grid-template-rows: auto auto auto;
+
+}
+
+.Presentation_container {
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6) url('../img/pexels-ricardo-esquivel-2539076.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+
+
+  display: grid;
+  grid-template-rows: 1fr 9fr;
+
+  color: var(--light-pink-skytl);
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+
+.LandingText_container{
+  width: 100%;
+  max-width: 80rem;
+  padding-top: 15rem;
+  padding-left: 3rem;
+}
+
+.LandingText_container h2{
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.LandingText_container button{
+  font-size: 2rem;
+  font-weight: normal;
+  width: 85%;
+
+  margin-left: 0;
+  
+}
+
+@media only screen and (min-width: 768px) {
+  .Presentation_container {
+    background: rgba(0, 0, 0, 0.6) url('../img/pexels-zhang-kaiyv-1139556.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .LandingText_container {
+    padding-left: 10rem;
+  }
+
+  .LandingText_container button{
+    /* width: 80rem; */
+   
+  }
+}

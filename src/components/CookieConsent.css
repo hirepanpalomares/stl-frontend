@@ -1,0 +1,46 @@
+.cookieConsent_container {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  background-color: var(--red-skytl);
+  color: white;
+  box-shadow: 5rem;
+
+  border-radius: 7px;
+  padding: 2rem;
+  width: 40rem;
+  height: 25rem;
+  position: fixed;
+  bottom: 3rem; 
+  right: 3rem;
+  z-index: 10;
+}
+
+p.cookie_paragraph1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+p.cookie_paragraph2 {
+  font-size: 1.6rem;
+}
+
+.cookieButtons_container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cookieButton {
+  border: none;
+  height: 4rem;
+  padding: 8px 32px;
+  
+  letter-spacing: 2px;
+  font-weight: bolder;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+
+  background-color: white;
+  color: var(--black-skytl) ;
+
+  width: 15rem;
+}

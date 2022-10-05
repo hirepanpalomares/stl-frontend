@@ -1,0 +1,103 @@
+
+.NavBar_container_land {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;  
+    /* border: solid;  */
+}
+
+.droneIcon_Container_land button{
+    background: transparent;
+    border: none;
+    height: 100%;
+}
+
+.droneIcon_Container_land svg{
+    width: 6rem;
+    height: 6rem;
+    fill: #ffffff;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.droneIcon_Container_land svg:hover{
+    fill: #c04141;
+    cursor: pointer;
+}
+
+
+
+.SkyTL_button_container_land {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SkyTL_button_container_land button{
+    background-color: transparent;
+    border-radius: 0rem;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0.1rem;
+    
+    padding: 1rem 2rem;
+    font-size: 2.5rem;
+    font-family: 'Playfair Display';
+    margin: auto 0;
+    color: #ffffff;
+}
+
+.navigationButtons_container_land {
+    color: white;
+}
+
+.SkyTL_button_container_land button:hover{
+    /* background-color: var(--red-skytl); */
+    color: var(--red-skytl) !important; 
+    background-color: transparent;
+    /* border-radius: 0rem;
+    border-style: solid;
+    border-color: var(--red-skytl);
+    border-width: 0.1rem; */
+
+    /* color: white; */
+    
+    cursor: pointer;
+}
+
+
+.navigationButtons_container_land ul{
+    list-style: none;
+    text-align: center;
+
+}
+
+.navigationButtons_container_land li{
+    display: inline-block;
+    margin: 1rem;
+    padding: 1rem;
+    border: solid transparent 2px;
+
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.5rem;
+    word-spacing: normal;
+}
+
+
+.navigationButtons_container_land li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.navigationButtons_container_land li:hover{
+    border-bottom: solid var(--red-skytl) 2px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .NavBar_container_land {
+        grid-template-columns: none;
+        grid-template-rows: 8rem 8rem;
+    }
+}
