@@ -25,7 +25,7 @@ function LandingPage() {
     setShowForm(!showForm);
     
     // window.scrollBy(-1,500)
-    window.scrollTo({ top: 900, behavior: 'smooth' })
+    window.scrollTo({ top: 600, behavior: 'smooth' })
   }
   const isTabletOrBigger = useMediaQuery({ query: '(min-width: 768px)' })
 

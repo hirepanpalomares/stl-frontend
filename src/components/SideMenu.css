@@ -14,7 +14,7 @@
 }
 
 .sidebar.open {
-    transform: translateX(-2.4rem);
+    transform: translateX(0rem);
     transition: all 0.3s;
 }
 

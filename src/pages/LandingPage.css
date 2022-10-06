@@ -23,8 +23,9 @@
 .LandingText_container{
   width: 100%;
   max-width: 80rem;
-  padding-top: 15rem;
+  padding-top: 20vh;
   padding-left: 3rem;
+  font-size: 1.25rem;
 }
 
 .LandingText_container h2{
@@ -50,10 +51,10 @@
 
   .LandingText_container {
     padding-left: 10rem;
+    font-size: 2rem;
   }
 
   .LandingText_container button{
     /* width: 80rem; */
-   
   }
 }
