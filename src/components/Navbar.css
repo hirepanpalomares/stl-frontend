@@ -13,10 +13,14 @@
 .droneIcon_Container svg{
     width: 6rem;
     height: 6rem;
-    fill: #000000;
 }
 
-.droneIcon_Container svg:hover{
+.droneIcon_Container svg g{
+    fill: rgb(0, 0, 0);
+}
+
+
+.droneIcon_Container svg:hover g{
     fill: #c04141;
     cursor: pointer;
 }

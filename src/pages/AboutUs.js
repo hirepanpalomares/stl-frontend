@@ -15,7 +15,7 @@ const AboutUs = () => {
             <span>
             Solves the property owners problem of being unable 
             to release value from the airspace above their property 
-            and airspace user and traders needing access to it.
+            and airspace users and traders needing access to it.
             {/* SkyTradeLinks allows property owners to solve the 
             problem of being unable to release value from the 
             airspace above their property by enabling you to 

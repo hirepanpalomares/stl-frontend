@@ -15,10 +15,15 @@
 
 }
 
+
+.LayOut_container main{
+  margin-bottom: 5rem;
+}
+
 .pageContent_container {
   margin-top: 2.4rem;
   padding: 2.4rem 2.4rem 0rem 2.4rem;
-  height: 70vh;
+  
 
 }
 

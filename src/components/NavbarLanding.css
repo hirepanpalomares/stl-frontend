@@ -14,12 +14,16 @@
 .droneIcon_Container_land svg{
     width: 6rem;
     height: 6rem;
-    fill: #ffffff;
+    
     margin-top: 1rem;
     margin-left: 1rem;
 }
 
-.droneIcon_Container_land svg:hover{
+.droneIcon_Container_land svg g{
+    fill: #ffffff;
+}
+
+.droneIcon_Container_land svg:hover g{
     fill: #c04141;
     cursor: pointer;
 }
