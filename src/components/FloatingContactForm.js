@@ -28,7 +28,8 @@ const FloatingContactForm = (props) => {
     }
     
     window.grecaptcha.ready(function() {
-      window.grecaptcha.execute('6LdZCu0hAAAAANZEwD1yqWyAACzSw7iVIkVTUONv', {action: 'submit'}).then(function(token) {
+      window.grecaptcha.execute(process.env.REACT_APP_RECAPTCHA_PUBLIC_KEY_V3, 
+        {action: 'submit'}).then(function(token) {
         // Add your logic to submit to your backend server here.
         // console.log(token);
         const message_req = sendMessage({

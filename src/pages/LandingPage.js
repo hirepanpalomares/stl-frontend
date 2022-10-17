@@ -36,13 +36,11 @@ function LandingPage() {
           <NavbarLanding/>
           <div className='LandingText_container'>
             <h1 className='make_money'>
-              A simple way to make money from the space above your property in a descentralized platform.
+            Would you or your company benefit from the passive income 
+            that we can generate from the unused air space above your property?
             </h1>
-            <h2>
-              Secure your air rights 
-            </h2>
             <button onClick={handleShowForm} className="Skytl_button showForm_button">
-              SIGN UP NOW
+              YES - REGISTER NOW
             </button>
           </div>
         </div>

@@ -42,7 +42,7 @@ const ContactUs = () => {
             </div>
           :
             <button className='Skytl_button signup_today' onClick={() => setShowForm(true)}>
-              SIGN UP TODAY
+              SEND US A MESSAGE
             </button>
       }
       

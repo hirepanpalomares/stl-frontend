@@ -30,6 +30,7 @@ const SignupForm = (props) => {
   const [ rcptLoaded, setRcptLoaded ] = useState(false);
 
   
+  console.log();
   
   // const { executeRecaptcha } = useGoogleReCaptcha();
   // const recaptchaRef = useRef();
@@ -59,7 +60,7 @@ const SignupForm = (props) => {
     // console.log(token_re);
 
     window.grecaptcha.ready(function() {
-      window.grecaptcha.execute('6LdZCu0hAAAAANZEwD1yqWyAACzSw7iVIkVTUONv', {action: 'submit'}).then(function(token) {
+      window.grecaptcha.execute(process.env.REACT_APP_RECAPTCHA_PUBLIC_KEY_V3, {action: 'submit'}).then(function(token) {
           // Add your logic to submit to your backend server here.
           // console.log(token);
           const request = createNewInterestedUser({
@@ -78,12 +79,12 @@ const SignupForm = (props) => {
     <div className="SignupForm_container">
       {/* <GoogleReCaptchaProvider
         language="en-US"
-        reCaptchaKey="6LdZCu0hAAAAANZEwD1yqWyAACzSw7iVIkVTUONv"
+        reCaptchaKey=""
       > */}
       <h1>Signup for free now to secure your air rights and stay updated</h1>
       <form className='Interest_form' onSubmit={handleSubmit}>
               {/* <ReCAPTCHA
-                sitekey={"6LdZCu0hAAAAANZEwD1yqWyAACzSw7iVIkVTUONv"} 
+                sitekey={""} 
                 
                 ref={recaptchaRef}
               /> */}

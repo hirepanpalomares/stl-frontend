@@ -1,7 +1,8 @@
 import 'axios';
 import axios from 'axios';
 
-const base_url = "http://localhost:3002/api";
+
+const base_url = process.env.REACT_APP_API_URL;
 
 export async function sendMessage(data) {
   //TODO Implement sending the files
@@ -13,7 +14,7 @@ export async function sendMessage(data) {
   // console.log(formData); // it cannot be logged
 
   await axios({
-    url: `${base_url}/contact`, 
+    url: `${base_url}/contact/message`, 
     method: "POST",
     data: data
   })
@@ -27,3 +28,22 @@ export async function sendMessage(data) {
     })
 
 }
+
+export async function sendInvestorsReq(data) {
+
+  await axios({
+    url: `${base_url}/contact/investors`, 
+    method: "POST",
+    data: data
+  })
+    .then((res) => {
+      // console.log(res.data);
+      return "request succeded"
+    })
+    .catch(error => {
+      // console.log(error);
+      return "request error"
+    })
+
+}
+

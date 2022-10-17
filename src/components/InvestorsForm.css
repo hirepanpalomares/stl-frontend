@@ -1,0 +1,60 @@
+.Investors_form {
+  width: 100%;
+  max-width: 73rem;
+  padding: 2rem;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  
+  /* border: solid 1px; */
+}
+
+
+.Investors_form select {
+  border: none;
+  border-bottom: solid rgb(169, 167, 167) 1px;
+
+  
+  width: auto;
+  height: 5.6rem;
+  
+  margin-bottom: 1rem;
+  padding: 1rem;
+  
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.7rem;
+  color: rgb(126, 125, 125);
+  
+  background-color: transparent;
+}
+
+.Investors_form select option {
+  
+  color: var(--black-skytl);
+  
+}
+
+
+.Investors_form input{
+  border: none;
+  border-bottom: solid rgb(169, 167, 167) 1px;
+
+  
+  height: 5.6rem;
+  width: 100%;
+
+  margin-bottom: 1rem;
+  padding: 1rem;
+  
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.7rem;
+  
+  background-color: transparent;
+}
+
+.Investors_form datalist{
+  position: absolute;
+  
+  width: 100%;
+}

@@ -1,8 +1,8 @@
 import 'axios';
 import axios from 'axios';
 
-const base_url = "http://localhost:3002/api";
-
+const base_url = process.env.REACT_APP_API_URL;
+console.log(base_url)
 export async function createNewInterestedUser(data) {
   console.log(data);
   await axios.post(`${base_url}/user`, data)

@@ -1,4 +1,5 @@
 .LandingPage_container {
+  
   display: grid;
   grid-template-rows: auto auto auto;
 
@@ -18,6 +19,9 @@
   color: var(--light-pink-skytl);
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 2rem;
+
+  margin: 0;
+  padding: 0;
 }
 
 .LandingText_container{
@@ -39,12 +43,22 @@
   width: 85%;
 
   margin-left: 0;
+  margin-top: 2rem;
   
+}
+
+
+
+.LandingPage_container h1{
+  font-weight: normal;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
   .Presentation_container {
-    background: rgba(0, 0, 0, 0.6) url('../img/pexels-zhang-kaiyv-1139556.jpg');
+    background: rgba(0, 0, 0, 0.3) url('../img/pexels-zhang-kaiyv-1139556.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }

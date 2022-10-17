@@ -35,7 +35,7 @@ const ContactForm = (props) => {
     }
     
     window.grecaptcha.ready(function() {
-      window.grecaptcha.execute('6LdZCu0hAAAAANZEwD1yqWyAACzSw7iVIkVTUONv', {action: 'submit'}).then(function(token) {
+      window.grecaptcha.execute(process.env.REACT_APP_RECAPTCHA_PUBLIC_KEY_V3, {action: 'submit'}).then(function(token) {
         // Add your logic to submit to your backend server here.
         
         const message_req = sendMessage({
@@ -50,13 +50,13 @@ const ContactForm = (props) => {
     props.setShowForm(false)
   }
 
-  const onAttachFile = (e) => {
-    const newFile = e.target.files[0];
-    // attachments.push(newFile);
-    setAttachments(newFile);
-    setNumberAttachments(numberAttachments+1);
-    console.log(attachments);
-  }
+  // const onAttachFile = (e) => {
+  //   const newFile = e.target.files[0];
+  //   // attachments.push(newFile);
+  //   setAttachments(newFile);
+  //   setNumberAttachments(numberAttachments+1);
+  //   console.log(attachments);
+  // }
 
   return (
     <form className='signup_form' onSubmit={handleSubmit}>

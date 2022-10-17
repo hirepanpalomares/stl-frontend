@@ -11,15 +11,21 @@ import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import Confirm from './pages/Confirm';
 import CookieConsent from './components/CookieConsent';
+import Investors from './pages/Investors';
 
+
+import dotenv from 'dotenv'
+dotenv.config()
 
 function App() {
+  
 
   let routes = (
     <Routes>
       <Route path='/' element={<LandingPage />}/>
       <Route path='/aboutUs' element={<LayOut><AboutUs /></LayOut>} />
       <Route path='/contactUs' element={<LayOut><ContactUs /></LayOut>} />
+      <Route path='/investors' element={<LayOut><Investors /></LayOut>} />
       <Route path='/confirm/:token' element={<LayOut><Confirm/></LayOut>} />
     </Routes>
   );

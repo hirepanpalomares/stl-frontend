@@ -48,6 +48,11 @@ const SideMenu = (props) => {
                         CONTACT US
                     </Link>    
                 </li>
+                <li onClick={props.onCloseMenu}> 
+                    <Link to={"/investors"} className="link-to-page">
+                        INVESTORS
+                    </Link>    
+                </li>
             </ul>
         </div>
     </aside>

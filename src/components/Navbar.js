@@ -61,6 +61,11 @@ const Navbar = () => {
                                 CONTACT US
                             </Link>    
                         </li>
+                        <li>
+                            <Link to={"/investors"} className="link-to-page">
+                                INVESTORS
+                            </Link>    
+                        </li>
                     </ul>
                 </div>
             </MediaQuery>

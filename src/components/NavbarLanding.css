@@ -73,10 +73,17 @@
 
 .navigationButtons_container_land li{
     display: inline-block;
+}
+
+
+.navigationButtons_container_land li a{
+    color: #ffffff;
+    text-decoration: none;
+    
     margin: 1rem;
     padding: 1rem;
     border: solid transparent 2px;
-
+    
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 1.8rem;
     letter-spacing: 0.5rem;
@@ -84,13 +91,7 @@
 }
 
 
-.navigationButtons_container_land li a{
-    color: #ffffff;
-    text-decoration: none;
-}
-
-
-.navigationButtons_container_land li:hover{
+.navigationButtons_container_land li a:hover{
     border-bottom: solid var(--red-skytl) 2px;
     cursor: pointer;
 }

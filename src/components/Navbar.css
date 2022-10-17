@@ -67,24 +67,36 @@
 
 .navigationButtons_container li{
     display: inline-block;
-    margin: 1rem;
-    padding: 1rem;
-    border: solid transparent 2px;
-
-    font-family: "Open Sans", Arial, sans-serif;
-    font-size: 1.8rem;
-    letter-spacing: 0.5rem;
-    word-spacing: normal;
+    
+    /* height: 3.8rem; */
+    
 }
 
 
 .navigationButtons_container li a{
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.5rem;
+    word-spacing: normal;
+
     color: var(--black-skytl);
     text-decoration: none;
+    display: inline-block;
+
+    margin: 1rem;
+    padding: 1rem;
+
+    border: solid transparent 2px;
+
+    /* line-height: 100%;
+    display: inline-block; */
+    /* padding: 1rem; */
+    /* height: 3.8rem; */
+    /* line-height: 3.8rem; */
 }
 
 
-.navigationButtons_container li:hover{
+.navigationButtons_container li a:hover{
     border-bottom: solid var(--red-skytl) 2px;
     cursor: pointer;
 }
