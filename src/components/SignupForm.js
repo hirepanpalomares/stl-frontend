@@ -29,9 +29,11 @@ const SignupForm = (props) => {
   
   const [ rcptLoaded, setRcptLoaded ] = useState(false);
 
-  
-  console.log();
-  
+  const [ formSubmitted, setFormSubmitted ] = useState(false);
+  const [ requestStatus,  setRequestStatus ] = useState("");
+
+  const [ userRegistered, setUserRegistered ] = useState(false);
+
   // const { executeRecaptcha } = useGoogleReCaptcha();
   // const recaptchaRef = useRef();
 
@@ -59,19 +61,21 @@ const SignupForm = (props) => {
     // recaptchaRef.current.reset();
     // console.log(token_re);
 
-    window.grecaptcha.ready(function() {
-      window.grecaptcha.execute(process.env.REACT_APP_RECAPTCHA_PUBLIC_KEY_V3, {action: 'submit'}).then(function(token) {
+    window.grecaptcha.ready( function() {
+      window.grecaptcha.execute(
+        process.env.REACT_APP_RECAPTCHA_PUBLIC_KEY_V3, {action: 'submit'}).
+        then( function(token) {
           // Add your logic to submit to your backend server here.
           // console.log(token);
           const request = createNewInterestedUser({
             ...data,
             token
           })
-        // TODO do something with request
-
+          // setRequestStatus(request.status)
+          setFormSubmitted(true)
+          // console.log(request.data);
         });
       });
-    props.onSubmitForm()
   }
 
 
@@ -81,44 +85,62 @@ const SignupForm = (props) => {
         language="en-US"
         reCaptchaKey=""
       > */}
-      <h1>Signup for free now to secure your air rights and stay updated</h1>
-      <form className='Interest_form' onSubmit={handleSubmit}>
-              {/* <ReCAPTCHA
-                sitekey={""} 
-                
-                ref={recaptchaRef}
-              /> */}
-              {/* <GoogleReCaptcha onVerify={t => console.log({ t })} /> */}
-              {/* <GoogleReCaptcha /> */}
 
-              <input 
-                type="email" placeholder="Email *" 
-                name='Email' 
-                required value={email} 
-                onChange={(e) => setEmail(e.target.value)}
-                />
-              <input 
-                type="text" placeholder="Full name *" 
-                name='Full_name' 
-                required value={fullName} 
-                onChange={(e) => setFullName(e.target.value)}
-                />
-              <input 
-                type="text" placeholder="Address of your property (including zip/postal code)*" 
-                name='Adress' 
-                required value={address} 
-                onChange={(e) => setAddress(e.target.value)}
-              />
-              <CountrySelect onChange={(e) => setCountry(e.target.value)} />
-              {/* <h2>Dropdown a pin in your country in the map: </h2> */}
-              {/* <Map /> */}
-              <button 
-                className="Skytl_button " 
-                type="submit"
-              >
-                SEND
-              </button>
-          </form>
+      {
+        formSubmitted ? 
+          <div className="signup_message">
+            <h2>Excellent! We're excited to send you our next update</h2>
+            <p>
+              To let us know it's really you and that you would like to receive emails from us, 
+              please click the link in the confirmation email we just sent you. You can unsuscribe from
+              these emails at any time.
+            </p>
+            <p>
+              You'll receive another email within 48 hours while we confirm your property ownership.
+            </p>
+          </div>
+        :
+        <>
+          <h1>Signup for free now to secure your air rights and stay updated</h1>
+          <form className='Interest_form' onSubmit={handleSubmit}>
+                  {/* <ReCAPTCHA
+                    sitekey={""} 
+                    
+                    ref={recaptchaRef}
+                  /> */}
+                  {/* <GoogleReCaptcha onVerify={t => console.log({ t })} /> */}
+                  {/* <GoogleReCaptcha /> */}
+
+                  <input 
+                    type="email" placeholder="Email *" 
+                    name='Email' 
+                    required value={email} 
+                    onChange={(e) => setEmail(e.target.value)}
+                    />
+                  <input 
+                    type="text" placeholder="Full name *" 
+                    name='Full_name' 
+                    required value={fullName} 
+                    onChange={(e) => setFullName(e.target.value)}
+                    />
+                  <input 
+                    type="text" placeholder="Address of your property (including zip/postal code)*" 
+                    name='Adress' 
+                    required value={address} 
+                    onChange={(e) => setAddress(e.target.value)}
+                  />
+                  <CountrySelect onChange={(e) => setCountry(e.target.value)} />
+                  {/* <h2>Dropdown a pin in your country in the map: </h2> */}
+                  {/* <Map /> */}
+                  <button 
+                    className="Skytl_button " 
+                    type="submit"
+                  >
+                    SEND
+                  </button>
+              </form>
+        </>
+      }
       {/* </GoogleReCaptchaProvider> */}
     </div>
   )

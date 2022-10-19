@@ -18,7 +18,7 @@ import SignupForm from '../components/SignupForm'
 
 function LandingPage() {
   const [ showForm, setShowForm ] = useState(false);
-  const [ formSubmitted, setFormSubmitted ] = useState(false);
+
 
 
   const handleShowForm = () => {
@@ -49,21 +49,7 @@ function LandingPage() {
         {
           showForm 
           &&
-          <SignupForm onSubmitForm={() => {setFormSubmitted(true); setShowForm(false)}}/>
-        }
-        {
-          formSubmitted && 
-          <div className="signup_message">
-            <h2>Excellent! We're excited to send you our next update</h2>
-            <p>
-              To let us know it's really you and that you would like to receive emails from us, 
-              please click the link in the confirmation email we just sent you. You can unsuscribe from
-              these emails at any time.
-            </p>
-            <p>
-              You'll receive another email within 48 hours while we confirm your property ownership.
-            </p>
-          </div>
+          <SignupForm />
         }
 
         <FrequentlyAskedQuestions/>

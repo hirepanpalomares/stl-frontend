@@ -12,3 +12,17 @@
   font-size: 2.3rem;
   margin-bottom: 3rem;
 }
+
+.Investors_container .message_sent svg {
+  margin: 10rem auto 1rem auto;
+  display: block;
+  fill: rgb(137, 173, 211);
+}
+
+.Investors_container p.thanks-inquiry {
+  font-size: 1.8rem;
+  color: var(--red-skytl);
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}

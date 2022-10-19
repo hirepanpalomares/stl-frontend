@@ -33,6 +33,10 @@
     justify-content: center;
 }
 
+.SkyTL_button_container a {
+    text-decoration: none;
+}
+
 .SkyTL_button_container button{
     background-color: transparent;
     border-radius: 0rem;
@@ -40,6 +44,7 @@
     border-color: black;
     border-width: 0.1rem;
     
+    color: black !important;
     padding: 1rem 2rem;
     font-size: 2.5rem;
     font-family: 'Playfair Display';
@@ -57,7 +62,7 @@
     border-color: var(--red-skytl);
     border-width: 0.1rem;
 
-    color: white;
+    color: white !important;
     
     cursor: pointer;
 }
