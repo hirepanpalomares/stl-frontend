@@ -6,11 +6,11 @@
 
   border-radius: 7px;
   padding: 2rem;
-  width: 40rem;
+  width: 100%;
   height: 25rem;
   position: fixed;
-  bottom: 3rem; 
-  right: 3rem;
+  bottom: 0rem; 
+  right: 0rem;
   z-index: 10;
 }
 
@@ -43,4 +43,23 @@ p.cookie_paragraph2 {
   color: var(--black-skytl) ;
 
   width: 15rem;
+}
+
+@media screen and (min-width: 768px) {
+  .cookieConsent_container {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    background-color: var(--red-skytl);
+    color: white;
+    box-shadow: 5rem;
+  
+    border-radius: 7px;
+    padding: 2rem;
+    width: 40rem;
+    height: 25rem;
+    position: fixed;
+    bottom: 3rem; 
+    right: 3rem;
+    z-index: 10;
+  }
+  
 }
